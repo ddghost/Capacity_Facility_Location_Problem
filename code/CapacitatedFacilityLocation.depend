@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1544418295 source:c:\users\dell\desktop\算法设计\capacitatedfacilitylocation\main.cpp
+	<dirent.h>
+	<iostream>
+	<cstdio>
+	"Solution.h"
+
+1544418597 c:\users\dell\desktop\算法设计\capacitatedfacilitylocation\solution.h
+	<iostream>
+	<fstream>
+	<vector>
+
+1545480051 source:c:\users\dell\desktop\算法设计\capacitatedfacilitylocation\code\main.cpp
+	<dirent.h>
+	<iostream>
+	<cstdio>
+	"greedySolution.h"
+	"SaSolution.h"
+
+1545485048 c:\users\dell\desktop\算法设计\capacitatedfacilitylocation\code\solution.h
+	<iostream>
+	<fstream>
+	<vector>
+	<math.h>
+	<time.h>
+
+1545485027 c:\users\dell\desktop\算法设计\capacitatedfacilitylocation\code\greedysolution.h
+	"Solution.h"
+
+1545488621 c:\users\dell\desktop\算法设计\capacitatedfacilitylocation\code\sasolution.h
+	"greedySolution.h"
+	<stdlib.h>
+
