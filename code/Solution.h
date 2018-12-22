@@ -15,7 +15,7 @@ protected:
     vector<double>  demandVec ,                 //所有顾客的存放容量需求
                     facilityCapacity ,          //所有设施的最大容量
                     openFacilityCost;           //所有设施的打开花费
-    vector<vector<double> > allocateCostVec;    //顾客分配到不同工厂的花费，[i][j],i为工厂号，j为顾客号
+    vector<vector<double> > allocateCostVec;    //顾客分配到不同设施的花费，[i][j],i为设施号，j为顾客号
     clock_t start_time;
 public:
     void run(string path ){

@@ -96,7 +96,7 @@ public:
             return lastCost;
         }
     }
-    //选随机顾客，随机选一个工厂处理该顾客请求
+    //选随机顾客，随机选一个设施处理该顾客请求
     double simleAllocChange(vector<int>& result , double lastCost){
         int randCutomer = rand() % customerNum;
         int newFacility = rand() % faciltyNum;
@@ -114,7 +114,7 @@ public:
             return lastCost;
         }
     }
-    //随机关掉一个工厂
+    //随机关掉一个设施
     double closeRandFac(vector<int>& result , double lastCost){
         vector<bool> openFac(faciltyNum , false);
         vector<double> facilityRestCapacity = facilityCapacity;
@@ -157,7 +157,7 @@ public:
             return lastCost;
         }
     }
-    //随机开一个工厂
+    //随机开一个设施
     double openRandFac(vector<int>& result , double lastCost){
         vector<bool> openFac(faciltyNum , false);
         bool haveCloseFac = false;
@@ -199,7 +199,7 @@ public:
             return lastCost;
         }
     }
-    //选一个顾客，贪心分配它的工厂（与原工厂不同）
+    //选一个顾客，贪心分配它的设施（与原设施不同）
     double greedyArrangeRandCustomer(vector<int>& result , double lastCost){
 
         int randCutomer = rand() % customerNum , bestFacility = -1;
