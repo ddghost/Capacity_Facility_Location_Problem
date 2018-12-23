@@ -8,7 +8,7 @@ using namespace std;
 
 class SaSolution:public greedySolution{
 private:
-    double temperature = 0.001;
+    double temperature = 0.02;
     const double alpha = 0.99;
     int outLimit = 1000 , inLimit = 2000;
 public:
