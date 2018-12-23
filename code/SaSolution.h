@@ -14,7 +14,7 @@ private:
 public:
     int run(string filePath , ofstream& os ){
         Solution::run(filePath );
-        //vector<int> saResult = startSa(startGreedy() );//注释掉下一句，取消本句的注释结果会更好。
+        //vector<int> saResult = startSa(greedyArrange() );//注释掉下一句，取消本句的注释结果会更好。
         vector<int> saResult = startSa(simpleGreedyArrange(vector<bool>(faciltyNum , true) ) );
         double cost = evalutate( saResult );
         cout << "sa arrange cost "<<  cost << endl;
