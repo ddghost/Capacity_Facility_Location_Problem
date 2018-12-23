@@ -6,24 +6,19 @@
 using namespace std;
 
 class greedySolution:public Solution{
-private:
-    double alpha ;
+
 protected:
     double stopThresold = 1.05;
 public:
     int run(string filePath ,ofstream& os ){
         Solution::run(filePath );
-        vector<int> result = startGreedy();
+        vector<int> result = greedyArrange();
         double cost = evalutate( result );
         cout << "greedy arrange cost "<<  cost << endl;
         printResult(result , os, filePath);
         return cost;
     }
 
-    vector<int> startGreedy(){
-        alpha = pow(1 / stopThresold , 1.0 / faciltyNum );
-        return greedyArrange( );
-    }
 
     vector<int> greedyArrange(){
         vector<bool> openFac(faciltyNum , true);
@@ -35,7 +30,6 @@ public:
         while(true){
             int bestReduceFacility = -1;
             double minCost = INT_MAX;
-            stopThresold *= alpha;
             for(int i = 0 ; i < faciltyNum ; i++){
                 if(openFac[i]){
                     openFac[i] = false;
